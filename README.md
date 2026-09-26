@@ -12,8 +12,6 @@ If you want to modify the user interface, open `form.ui` using **Qt Designer**, 
 
 The main Python file of the project is `GasDis.py`.
 
-After completing the model setup, run the following command from the project directory:
-
 ```bash
 python GasDis.py
 ```
