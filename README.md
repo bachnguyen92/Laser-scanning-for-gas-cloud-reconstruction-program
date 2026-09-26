@@ -2,11 +2,17 @@
 
 ## User Interface
 
-The graphical user interface is designed using **Qt Designer** and is stored in the `form.ui` file.
+The graphical user interface is designed using Qt Designer and is stored in the form.ui file.
 
-The `form.ui` file contains the layout and UI components required by the application.
+If you modify the user interface using Qt Designer, you must regenerate the Python UI file before running the project.
 
-If you want to modify the user interface, open `form.ui` using **Qt Designer**, make the necessary changes, and save the file before running the application.
+After making changes to form.ui, run the following command from the project directory:
+
+python -m PyQt5.uic.pyuic form.ui -o New_window.py
+
+This command converts the form.ui file into the Python file New_window.py.
+
+Important: Whenever form.ui is modified, run the command above again to update New_window.py.
 
 ## Running the Project
 
